@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(29,29,29);
+    color: white;
+}
+
+.main_h1 {
+    padding:20px;
+    text-align: center;
+    background: linear-gradient(140deg, rgb(0, 143, 107), rgb(38, 0, 255));
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+}
+.form .label {
+    font-size: 23px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.form input[name = "query"] {
+    padding:10px;
+    width:250px;
+    border:none;
+    outline: none;
+    background: gray;
+}
+
+.form input::placeholder {
+    color:white;
+}
+
+.form button[type ="submit"] {
+    padding:10px;
+    color:white;
+    background: dodgerblue;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100px;
+    margin-left:30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form button[type ="submit"]:hover { 
+   background: rgb(98, 0, 255);
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-title {
+    padding: 20px;
+    font-size: 24px;
+    width:300px;
+}
+
+.card-content p {
+    padding: 0px 0px 20px 20px;
+    font-size: 20px;
+}
+
+.card-content  .card-title span {
+    background: blue;
+}
+
+.card-list img {
+    transition:  all 0.4s;
+}
+
+.card-list img:hover {
+   transform: perspective(800px) scale(1.1) rotateY(10deg);
+   box-shadow: 10px 10px 30px white;
+}
